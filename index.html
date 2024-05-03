@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         /* Custom CSS */
         /* Set pink as the primary color */
@@ -28,15 +29,15 @@
     <nav class="bg-pink-500 p-4 opacity-75 fixed top-0 left-0 right-0">
         <div class="container mx-auto flex justify-between items-center pl-32 pr-32">
             <!-- Logo -->
-            <a href="#" class="text-white font-bold text-2xl">Mikay & Jead ---------------------------</a>
+            <a href="#" class="text-white font-bold text-2xl">Mikay & Jead</a>
             <!-- Menu items -->
             <div class="flex space-x-4 hidden md:inline">
               <!-- Hide Events and Gallery on small screens -->
                 <a href="#" class="nav-link text-white hover:text-pink-700 ">Main</a>
-                <a href="#events" class="nav-link text-white hover:text-pink-700">Events</a>
-                <a href="#gallery" class="nav-link text-white hover:text-pink-700">Gallery</a>
+                <a href="#gallery" class="nav-link text-white hover:text-pink-700">Groom&Bride</a>
                 <a href="#rsvp" class="nav-link text-white hover:text-pink-700">RSVP</a>
-                <a href="#contact" class="nav-link text-white hover:text-pink-700">Contact</a>
+                <a href="#contact" class="nav-link text-white hover:text-pink-700">Where&When</a>
+                <a href="#events" class="nav-link text-white hover:text-pink-700">FAQ</a>
             </div>
             <!-- Mobile menu button -->
             <div class="flex md:hidden">
@@ -51,15 +52,15 @@
     <div id="mobile-menu" class="hidden md:hidden bg-pink-500 p-4">
         <a href="#" class="block text-white py-2 px-4 hover:bg-pink-600 mt-20">Main</a>
         <!-- Show Events and Gallery in mobile menu -->
-        <a href="#events" class="block text-white py-2 px-4 hover:bg-pink-600">Events</a>
-        <a href="#gallery" class="block text-white py-2 px-4 hover:bg-pink-600">Gallery</a>
+        <a href="#groomandbride" class="block text-white py-2 px-4 hover:bg-pink-600">Groom&Bride</a>
         <a href="#rsvp" class="block text-white py-2 px-4 hover:bg-pink-600">RSVP</a>
-        <a href="#contact" class="block text-white py-2 px-4 hover:bg-pink-600">Contact</a>
+        <a href="#contact" class="block text-white py-2 px-4 hover:bg-pink-600">Where&When</a>
+        <a href="#events" class="block text-white py-2 px-4 hover:bg-pink-600">FAQ</a>
     </div>
 
     <!-- Main Content -->
     <section id="main" class="mb-8">
-      <div style="background-image: url('assets/img/hero-bg.jpg'); height: 800px;" class="bg-cover bg-center top-0 left-0 right-0">
+      <div style="background-image: url('assets/img/hero-bg.jpg'); height: 900px;" class="bg-cover bg-center top-0 left-0 right-0">
         <div class="grid grid-cols-2 gap-4 pt-20">
             <div></div>
           <div class="place-self-center m-32">
@@ -74,10 +75,29 @@
         </div>
       </div>
   </section>
+  <!-- Groom and Bride -->
     <div class="container mx-auto px-4 py-8">
-        <section id="events" class="mb-8">
-            <h2 class="text-3xl font-bold text-pink-800">Events</h2>
-            <p class="mt-4">Details about the events...</p>
+        <section id="groomandbride" class="mb-8">
+            <div style="height: 600px;" class="bg-cover bg-center top-0 left-0 right-0">
+                <div class="pt-20">
+                    <p class="text-center">The Groom & Bride</p>
+                    <div class="grid grid-cols-3">
+                        <div class="place-self-center"> 
+                            <p class="text-center">The Groom</p>
+                            <img  src="assets/img/groom.png" alt="" srcset="">
+                            <p class="text-center">Jead Fuentes</p>
+                            <a href="https://www.facebook.com/jead.fuentes" class=" pl-60"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="place-self-center"> <img src="assets/img/groomandbride.png" alt="" srcset=""></div>
+                        <div class="place-self-start"> 
+                            <p class="text-center">The Bride</p>
+                            <img src="assets/img/bride.png" alt="" srcset="">
+                            <p class="text-center">Mae Kaila Bayobay</p>
+                            <a href="https://www.facebook.com/maekaila.bayobay.98" class=" pl-60"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
         </section>
 
         <section id="gallery" class="mb-8">
