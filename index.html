@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Wedding</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/icon type">
+    <title>Mikay & Jead Wedding</title>
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Font Awesome CDN -->
@@ -25,13 +26,13 @@
 <body class="bg-pink-100">
     <!-- Navigation Bar -->
     <nav class="bg-pink-500 p-4 opacity-75 fixed top-0 left-0 right-0">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="container mx-auto flex justify-between items-center pl-32 pr-32">
             <!-- Logo -->
-            <a href="#" class="text-white font-bold text-2xl">Our Wedding</a>
+            <a href="#" class="text-white font-bold text-2xl">Mikay & Jead ---------------------------</a>
             <!-- Menu items -->
             <div class="flex space-x-4 hidden md:inline">
               <!-- Hide Events and Gallery on small screens -->
-                <a href="#" class="nav-link text-white hover:text-pink-700 ">Home</a>
+                <a href="#" class="nav-link text-white hover:text-pink-700 ">Main</a>
                 <a href="#events" class="nav-link text-white hover:text-pink-700">Events</a>
                 <a href="#gallery" class="nav-link text-white hover:text-pink-700">Gallery</a>
                 <a href="#rsvp" class="nav-link text-white hover:text-pink-700">RSVP</a>
@@ -48,7 +49,7 @@
 
     <!-- Responsive Menu (Hidden by default) -->
     <div id="mobile-menu" class="hidden md:hidden bg-pink-500 p-4">
-        <a href="#" class="block text-white py-2 px-4 hover:bg-pink-600 mt-10">Home</a>
+        <a href="#" class="block text-white py-2 px-4 hover:bg-pink-600 mt-20">Main</a>
         <!-- Show Events and Gallery in mobile menu -->
         <a href="#events" class="block text-white py-2 px-4 hover:bg-pink-600">Events</a>
         <a href="#gallery" class="block text-white py-2 px-4 hover:bg-pink-600">Gallery</a>
@@ -57,12 +58,19 @@
     </div>
 
     <!-- Main Content -->
-    <section id="home" class="mb-8">
-      <div style="background-image: url('assets/img/hero-bg.jpg'); height: 650px; background-repeat: no-repeat;background-position: center;">
-        <div class="flex justify-center ">
-          <div>01</div>
-          <div>02</div>
-          <div>03</div>
+    <section id="main" class="mb-8">
+      <div style="background-image: url('assets/img/hero-bg.jpg'); height: 800px;" class="bg-cover bg-center top-0 left-0 right-0">
+        <div class="grid grid-cols-2 gap-4 pt-20">
+            <div></div>
+          <div class="place-self-center m-32">
+            <p class="text-2xl text-white m-5 text-center">We're Are Getting Married! Join us as we tie the knot!</p>
+            <div class="border-t-2 border-b-2 border-white">
+                <p class="text-6xl text-white p-6 text-center">MAE KAILA & JEAD</p>
+            </div>
+            <p class="text-2xl text-white text-center p-6">Save The Date</p>
+            <p class="text-4xl text-white text-center p6">June 22, 2024</p>
+            <div class="flex justify-center p6"> <a href="" class="text-white text-center p-6 button">RVSP</a></div>
+          </div>
         </div>
       </div>
   </section>
@@ -74,7 +82,7 @@
 
         <section id="gallery" class="mb-8">
             <h2 class="text-3xl font-bold text-pink-800">Gallery</h2>
-            <p class="mt-4">Photos from our journey together...</p>
+            <p class="mt-4">Photos from our journey together tetsgtuldshgv;sjg;...</p>
         </section>
 
         <section id="rsvp" class="mb-8">
