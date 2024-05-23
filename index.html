@@ -1,127 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/img/favicon.png" type="image/icon type">
-    <title>Mikay & Jead Wedding</title>
-    <!-- Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <style>
-        /* Custom CSS */
-        /* Set pink as the primary color */
-        :root {
-            --pink: #ff69b4; /* You can adjust the shade of pink as desired */
-        }
-        /* Style the navigation bar */
-        .nav-link:hover {
-            color: var(--pink);
-        }
-    </style>
+    <title>Our Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 </head>
-
-<body class="bg-pink-100">
-    <!-- Navigation Bar -->
-    <nav class="bg-pink-500 p-4 opacity-75 fixed top-0 left-0 right-0">
-        <div class="container mx-auto flex justify-between items-center pl-32 pr-32">
-            <!-- Logo -->
-            <a href="#" class="text-white font-bold text-2xl">Mikay & Jead</a>
-            <!-- Menu items -->
-            <div class="flex space-x-4 hidden md:inline">
-              <!-- Hide Events and Gallery on small screens -->
-                <a href="#" class="nav-link text-white hover:text-pink-700 ">Main</a>
-                <a href="#gallery" class="nav-link text-white hover:text-pink-700">Groom&Bride</a>
-                <a href="#rsvp" class="nav-link text-white hover:text-pink-700">RSVP</a>
-                <a href="#contact" class="nav-link text-white hover:text-pink-700">Where&When</a>
-                <a href="#events" class="nav-link text-white hover:text-pink-700">FAQ</a>
-            </div>
-            <!-- Mobile menu button -->
-            <div class="flex md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Responsive Menu (Hidden by default) -->
-    <div id="mobile-menu" class="hidden md:hidden bg-pink-500 p-4">
-        <a href="#" class="block text-white py-2 px-4 hover:bg-pink-600 mt-20">Main</a>
-        <!-- Show Events and Gallery in mobile menu -->
-        <a href="#groomandbride" class="block text-white py-2 px-4 hover:bg-pink-600">Groom&Bride</a>
-        <a href="#rsvp" class="block text-white py-2 px-4 hover:bg-pink-600">RSVP</a>
-        <a href="#contact" class="block text-white py-2 px-4 hover:bg-pink-600">Where&When</a>
-        <a href="#events" class="block text-white py-2 px-4 hover:bg-pink-600">FAQ</a>
-    </div>
-
-    <!-- Main Content -->
-    <section id="main" class="mb-8">
-      <div style="background-image: url('assets/img/hero-bg.jpg'); height: 900px;" class="bg-cover bg-center top-0 left-0 right-0">
-        <div class="grid grid-cols-2 gap-4 pt-20">
-            <div></div>
-          <div class="place-self-center m-32">
-            <p class="text-2xl text-white m-5 text-center">We're Are Getting Married! Join us as we tie the knot!</p>
-            <div class="border-t-2 border-b-2 border-white">
-                <p class="text-6xl text-white p-6 text-center">MAE KAILA & JEAD</p>
-            </div>
-            <p class="text-2xl text-white text-center p-6">Save The Date</p>
-            <p class="text-4xl text-white text-center p6">June 22, 2024</p>
-            <div class="flex justify-center p6"> <a href="" class="text-white text-center p-6 button">RVSP</a></div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- Groom and Bride -->
-    <div class="container mx-auto px-4 py-8">
-        <section id="groomandbride" class="mb-8">
-            <div style="height: 600px;" class="bg-cover bg-center top-0 left-0 right-0">
-                <div class="pt-20">
-                    <p class="text-center">The Groom & Bride</p>
-                    <div class="grid grid-cols-3">
-                        <div class="place-self-center"> 
-                            <p class="text-center">The Groom</p>
-                            <img  src="assets/img/groom.png" alt="" srcset="">
-                            <p class="text-center">Jead Fuentes</p>
-                            <a href="https://www.facebook.com/jead.fuentes" class=" pl-60"><i class="fa-brands fa-facebook"></i></a>
-                        </div>
-                        <div class="place-self-center"> <img src="assets/img/groomandbride.png" alt="" srcset=""></div>
-                        <div class="place-self-start"> 
-                            <p class="text-center">The Bride</p>
-                            <img src="assets/img/bride.png" alt="" srcset="">
-                            <p class="text-center">Mae Kaila Bayobay</p>
-                            <a href="https://www.facebook.com/maekaila.bayobay.98" class=" pl-60"><i class="fa-brands fa-facebook"></i></a>
-                        </div>
-                    </div>
+<body>
+    <div>
+        <header>
+            <nav class="container">
+                <div class="logo">Our Wedding</div>
+                <ul class="menu">
+                    <li><a href="#main">Main</a></li>
+                    <li><a href="#bride-groom">Groom & Bride</a></li>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li><a href="#where-when">Where & When</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                    <button onclick="toggleHiddenText()" class="hidden-button"><i class="fa-solid fa-bars"></i></button>
                 </div>
-              </div>
+                <ul id="hiddenText" class="hidden-text" >
+                    <li><a href="#main">Main</a></li>
+                    <li><a href="#bride-groom">Groom & Bride</a></li>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li><a href="#where-when">Where & When</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="main" class="hero">
+            <div class="hero-content">
+                <h1>We're Getting Married!</h1>
+                <p>Join us as we tie the knot!</p>
+                <h4 class="hero-name">Mae Kaila & Jead</h4>
+                <p class="date">SAVE THE DATE</p>
+                <p>JUNE 22, 2024</p>
+                <a href="#rsvp" class="cta-button">RSVP</a>
+            </div>
         </section>
 
-        <section id="gallery" class="mb-8">
-            <h2 class="text-3xl font-bold text-pink-800">Gallery</h2>
-            <p class="mt-4">Photos from our journey together tetsgtuldshgv;sjg;...</p>
+        <section id="bride-groom" class="section">
+            <div class="bride-groom-images">
+                <div>
+                    <h2>The Bride</h2>
+                    <img src="img/bride.png" alt="Bride" class="bride">
+                    <h2>Mae Kaila Bayobay</h2>
+                    <a href="https://www.facebook.com/maekaila.bayobay.98"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div>
+                    <img src="img/groomandbride.png" alt="Bride and Groom Together" class="bride-groom-together">
+                </div>
+                <div>
+                    <h2>The Groom</h2>
+                    <img src="img/groom.png" alt="Groom" class="groom">
+                    <h2>Jead Fuentes</h2>
+                    <a href="https://www.facebook.com/jead.fuentes"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
         </section>
 
-        <section id="rsvp" class="mb-8">
-            <h2 class="text-3xl font-bold text-pink-800">RSVP</h2>
-            <p class="mt-4">Please RSVP to join us on our special day...</p>
+        <section id="rsvp" class="section">
+            <div class="rsvp-content">
+                <div class="rsvp-image">
+                    <img src="img/profile-img.jpg" alt="RSVP">
+                <div class="overlay">RSVP Now
+                    <h1>Will You Attend?</h1>
+                    <h4>Only 1 seat has been reserved for you.
+                        Kindly respond by December 25th, 2023.
+                        We look forward to seeing you!
+                    </h4>
+                    <p>
+                        For any inquiries kindly contact the couple:
+                        Jead Fuentes
+                        09923312393
+
+                        Mae Kaila Bayobay
+                        09264864425
+                    </p>
+                </div>
+                </div>
+                <div class="rsvp-form">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBxuMSpE5yNoS6Tfu4-LTSGS4xpdg3NYZXDgX4A1V2ive1Hg/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2 class="text-3xl font-bold text-pink-800">Contact Us</h2>
-            <p class="mt-4">Reach out to us for any inquiries...</p>
+        <section id="where-when" class="section">
+            <h2>Where & When</h2>
+            <p>We love to see you soon</p>
+            <div class="flex">
+                <div class="flex-col">
+                    <i class="fa-solid fa-church"></i>
+                    <h2>Ceremony</h2>
+                    <p>Saturday, June 22, 2024</p>
+                    <p>10 pm</p>
+                    <p>Sacred Heart Chaplaincy</p>
+                    <p>Inangayan sta. Barbara, Iloilo</p>
+                </div>
+                <div class="flex-col1">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <h2>Reception</h2>
+                    <p>Fleur De Liz</p>
+                    <p>Sta Barbara Iloilo</p>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3918.923861647344!2d122.52489347583877!3d10.817138658439825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33aefd263d408c6b%3A0xcb427cb5d7e370a9!2sRG7G%2B73G%2C%20Santa%20Barbara%2C%20Iloilo!3m2!1d10.8131965!2d122.5251861!4m5!1s0x33aefd31a0cc8b69%3A0x8645117ef3159423!2sRGCJ%2B725%20Fleur%20de%20Liz%20Inn%2C%20Old%20Iloilo%20-%20Capiz%20Rd%2C%20Santa%20Barbara%2C%20Iloilo!3m2!1d10.8205904!2d122.5301045!5e0!3m2!1sen!2sph!4v1716462953901!5m2!1sen!2sph" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
+
+        <section id="faq" class="section">
+            <h2>FAQs</h2>
+            <p>Frequently Asked Questions</p>
+            <div class="grid">
+                <div>
+                    <i class="fa-solid fa-shirt"></i>
+                    <h1>What to Wear</h1>
+                    <p>We request our guest to wear this colors</p>
+                    <img src="img/colors.jpg" alt="" srcset="">
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h1>Documentation</h1>
+                    <p>You can have your phone for photos and snaps but please be mindful of our Photographer, and please don't block the aisle when the bride is walking down</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gift"></i>
+                    <h1>Gifts</h1>
+                    <p>While wedding presents are so nice, your pressence is quite suffice, But if you wish to give us well, Please donate to our wishing well</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-clock"></i>
+                    <h1>What time</h1>
+                    <p>Please join us to celebrate our love and unity as we say "I do"! We ask that guests arrive 15-30 minutes prior</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Our Wedding. All rights reserved.</p>
+        </footer>
     </div>
-
-    <!-- JavaScript to toggle the mobile menu -->
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
 </body>
 
+
+<script>
+    function toggleHiddenText() {
+        var hiddenText = document.getElementById("hiddenText");
+        hiddenText.classList.toggle("show-text");
+    }
+</script>
 </html>
