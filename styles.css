@@ -251,10 +251,15 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     .hidden-button {
-        display: block;
-        left: 10%;
+        display: inline-block;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     .menu{
@@ -262,12 +267,6 @@ footer {
             list-style-type: none;
             margin: 0;
             padding: 0;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0;
     }
     
     
