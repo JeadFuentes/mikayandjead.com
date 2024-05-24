@@ -11,7 +11,7 @@
 </head>
 <body>
     <div>
-        <header>
+        <header class="head">
             <nav class="container">
                 <div class="logo">Our Wedding</div>
                 <ul class="menu">
@@ -21,15 +21,11 @@
                     <li><a href="#where-when">Where & When</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
-                <a onclick="toggleHiddenText()" class="hidden-button"><i class="fa-solid fa-bars"></i></a>
-                </div>
-                <ul id="hiddenText" class="hidden-text" >
-                    <li><a href="#main">Main</a></li>
-                    <li><a href="#bride-groom">Groom & Bride</a></li>
-                    <li><a href="#rsvp">RSVP</a></li>
-                    <li><a href="#where-when">Where & When</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                 </div>
             </nav>
         </header>
 
@@ -150,9 +146,34 @@
 
 
 <script>
-    function toggleHiddenText() {
-        var hiddenText = document.getElementById("hiddenText");
-        hiddenText.classList.toggle("show-text");
+    document.addEventListener('DOMContentLoaded', function() {
+    var menuIcon = document.querySelector('.menu-icon');
+    var menu = document.querySelector('.menu');
+    var logo = document.querySelector('.logo');
+    var header = document.querySelector('.head');
+    
+    
+    menuIcon.addEventListener('click', function() {
+      menu.classList.toggle('active');
+      logo.classList.toggle('hide');
+      header.classList.toggle('active');
+    });
+    
+    function toggleMenu() {
+      menu.classList.toggle('active');
     }
+    
+    function handleResize() {
+      if (window.innerWidth <= 768) {
+        menuIcon.style.display = 'block';
+      } else {
+        menuIcon.style.display = 'none';
+        menu.classList.remove('hide');
+      }
+    }
+    
+    window.addEventListener('resize', handleResize);
+    handleResize();
+  });
 </script>
 </html>
