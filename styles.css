@@ -84,6 +84,7 @@ nav {
 }
 
 .hero-content {
+    background-color: #333;
     max-width: 800px;
     margin: 0 auto;
     margin-right: 10%;
@@ -277,7 +278,7 @@ footer {
     }
 
     .container {
-        width: 90%;
+        width: 70%;
         margin: 0 auto;
         padding: 0;
     }
@@ -285,7 +286,7 @@ footer {
     
     header {
         background-color: #ffcccc;
-        padding: 20px;
+        padding: 30px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: fixed;
         width: 100%;
@@ -295,7 +296,7 @@ footer {
 
     .head.active{
         background-color: #ffcccc;
-        padding: 20px;
+        padding: 30px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: fixed;
         width: 100%;
@@ -520,3 +521,4 @@ footer {
     }
     
 }
+
