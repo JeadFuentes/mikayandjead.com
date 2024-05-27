@@ -1,5 +1,5 @@
 body {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes';
     margin: 0;
     padding: 0;
     background-color: #f9f3f3;
@@ -62,7 +62,8 @@ nav {
 
 .menu li a {
     text-decoration: none;
-    color: #333;
+    font-size: 14px;
+    color: #1b1b1b;
     transition: color 0.3s;
 }
 
@@ -85,12 +86,14 @@ nav {
 
 .hero-content {
     background-color: #333;
+    opacity: 0.8;
     max-width: 800px;
     margin: 0 auto;
     margin-right: 10%;
+    padding: 10px;
     color: white;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-family:'sans-serif';
 }
 
 .hero-content p{
@@ -215,6 +218,11 @@ nav {
     display: flex;
 }
 
+.flex p{
+    font-size: 15px;
+    font-family:'sans-serif';
+}
+
 .flex-col{
     flex: 50%; 
     background-color: #d98294; 
@@ -238,6 +246,10 @@ i {
     display: grid; 
     grid-template-columns: auto auto; 
     text-align: center;
+}
+
+.grid p{
+    font-family:'sans-serif';
 }
 
 footer {
@@ -278,7 +290,7 @@ footer {
     }
 
     .container {
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
         padding: 0;
     }
@@ -286,11 +298,11 @@ footer {
     
     header {
         background-color: #ffcccc;
-        padding: 30px;
+        padding: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         position: fixed;
         width: 100%;
-        height: 40px;
+        height: 20px;
         z-index: 5;
     }
 
@@ -344,6 +356,7 @@ footer {
     
      .menu-icon {
         cursor: pointer;
+        padding-right: 80px;
       }
     
     
@@ -359,7 +372,7 @@ footer {
     .hero-content {
         max-width: 800px;
         margin: 0 auto;
-        margin-right: 10%;
+        margin-right: 8%;
         color: white;
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
