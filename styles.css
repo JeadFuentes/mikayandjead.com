@@ -76,18 +76,16 @@ nav {
   }
 
 .hero {
-     background-image: url('img/hero-bg.jpg');
+    background-image: url('img/hero-bg.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     text-align: right;
     color: black; /* Ensures text is visible against the background */
     padding: 200px 50px 350px 50px; /* Adjust padding as needed */
 }
 
 .hero-content {
-    background-color: #333;
-    opacity: 0.8;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
     margin-right: 10%;
     padding: 10px;
@@ -179,7 +177,7 @@ nav {
     position: absolute;
     top: 50%;
     left: 40%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     font-size: 24px;
@@ -366,16 +364,16 @@ footer {
         background-position: center;
         text-align: right;
         color: black; /* Ensures text is visible against the background */
-        padding: 70px 50px 20px 50px; /* Adjust padding as needed */
+        padding: 50px 50px 180px 50px; /* Adjust padding as needed */
     }
     
     .hero-content {
         max-width: 800px;
         margin: 0 auto;
-        margin-right: 8%;
+        margin-right: 5%;
         color: white;
         text-align: center;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+        font-family: 'sans-serif';
     }
     
     .hero-content p{
@@ -468,6 +466,10 @@ footer {
         padding: 20px;
         font-size: 14px;
         font-weight: bold;
+    }
+
+    .overlay a{
+        color: #ff6699;
     }
     
     .rsvp-form {
